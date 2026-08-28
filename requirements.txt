@@ -1,0 +1,14 @@
+# Tested with Python 3.11. For a CUDA build of torch, install it first from
+# https://pytorch.org (e.g. --index-url https://download.pytorch.org/whl/cu128).
+torch>=2.0
+torchvision>=0.15
+numpy>=1.24
+Pillow>=9.0
+
+# visualization_attention.py only
+matplotlib>=3.7
+scikit-image>=0.21
+requests>=2.28
+# the headless build has no Qt plugins, which would otherwise crash matplotlib
+# on machines without a display
+opencv-python-headless>=4.7
